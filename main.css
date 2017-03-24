@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 80px;
+  font-family: 'Lobster';
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 80px;
+  text-align: center;
+}
+hr {
+    height: 1px;
+    width: 60%;
+    border-top: 1px solid #c7c7c7;
+    padding: 0;
+}
+#board {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin-top: 50px;
+}
+#turn {
+  background-color: #5ed1ce;
+  border: thin solid #379a98;
+  border-radius: 5px;
+  padding: 15px;
+  display: none;
+}
+#resGame {
+  background-color: #ff675d;
+  border: thin solid #d1453c;
+  padding: 15px;
+  border-radius: 5px;
+  display: none;
+}
+#score {
+  background-color: #ffe34e;
+  border: thin solid #d4b135;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+}
+#symbolX, #symbolO {
+  display: none;
+}
+h1 {
+  padding: 20px;
+}
+h2 {
+  padding: 10px;
+}
+td {
+  background-color: #f1f1f0;
+  outline: 1px solid #d9d7d2;
+ }
+ tbody {
+  box-shadow: 4px 4px 5px 2px #9a9696;
+ }
