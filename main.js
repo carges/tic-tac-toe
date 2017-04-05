@@ -42,6 +42,7 @@ $(document).ready(function(){
   cell22.addEventListener("click", setCell22);
 
   function writeScore(winner, loser, idxWinner, idxLoser) {
+    console.log(winner, loser, game)
     res.style.display = "inline-block";
     res.innerHTML = winner + " won!";
     scoreArray[idxWinner]++;
@@ -410,8 +411,13 @@ $(document).ready(function(){
             tn.innerHTML = "Computer's turn";
             game[row][col].clicked = true;
             numTurn++;
-            setTimeout(computerGame, 500) ;
-            return;
+            if (checkVictory()) {
+              resetBoard();
+              return;
+            } else {
+              setTimeout(computerGame, 500) ;
+              return;
+            }
           } else {
             res.style.display = "inline-block";
             res.innerHTML = "It was a draw!"
